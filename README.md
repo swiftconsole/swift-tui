@@ -25,12 +25,12 @@ let package = Package(
     // name, platforms, products, etc.
     dependencies: [
         // other dependencies
-        .package(url: "https://github.com/besya/swift-tui.git", from: "0.0.1-dev"),
+        .package(url: "https://github.com/swiftconsole/swift-tui.git", branch: "main"),
     ],
     targets: [
         .target(name: "<library>", dependencies: [
             // other dependencies
-            .product(name: "SwiftTUI", package: "SwiftTUI"),
+            .product(name: "SwiftTUI", package: "swift-tui"),
         ]),
         // other targets
     ]
